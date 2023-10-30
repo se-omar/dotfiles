@@ -1,0 +1,9 @@
+[credential]
+	helper = store
+[user]
+	email = se.omarayman@gmail.com
+	name = Omar Ayman
+[init]
+	defaultBranch = main
+[core]
+	editor = nvim
