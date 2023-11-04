@@ -237,8 +237,8 @@ exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/google-chrome-stable'
 bindsym Print exec maim -s | xclip -selection clipboard -t image/png
 
 # toggle keyboard layouts
-bindsym Ctrl+shift+t exec xmodmap ~/layouts/qwerty.xmodmap
-bindsym Ctrl+shift+k exec xmodmap ~/layouts/dvorak.xmodmap
+bindsym Ctrl+shift+t exec xmodmap ~/dotfiles/layouts/qwerty.xmodmap
+bindsym Ctrl+shift+k exec xmodmap ~/dotfiles/layouts/dvorak.xmodmap
 
 #control volume
 # bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5% #increase sound volume
