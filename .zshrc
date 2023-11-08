@@ -119,4 +119,4 @@ if [ -f '/home/omar/gazal/google-cloud-sdk/path.zsh.inc' ]; then . '/home/omar/g
 if [ -f '/home/omar/gazal/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/omar/gazal/google-cloud-sdk/completion.zsh.inc'; fi
 
 export GOPATH=$HOME/go
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin:/usr/share/dotnet:$HOME/.dotnet/tools
