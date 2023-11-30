@@ -49,6 +49,4 @@ vim.opt.foldcolumn = '0' -- '0' is not bad
 vim.opt.foldlevel = 99 -- Using ufo provider need a large value, feel free to decrease the value
 vim.opt.foldlevelstart = 99
 vim.opt.foldenable = true
-if vim.g.neovide then
-  vim.g.neovide_cursor_animation_length = 0.06
-end
+vim.g.skip_ts_context_commentstring_module = true

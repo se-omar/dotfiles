@@ -3,10 +3,6 @@ local M = {
   event = "BufReadPost",
   dependencies = {
     {
-      "JoosepAlviste/nvim-ts-context-commentstring",
-      event = "VeryLazy",
-    },
-    {
       "nvim-tree/nvim-web-devicons",
       event = "VeryLazy",
     },
@@ -31,10 +27,6 @@ function M.config()
       enable = true,
     },
     indent = { enable = true, disable = { "python", "css" } },
-
-    context_commentstring = {
-      enable = true,
-    },
   }
 end
 
