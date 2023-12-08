@@ -230,8 +230,8 @@ exec --no-startup-id nitrogen --restore
 bindsym $mod+Ctrl+greater move workspace to output right
 bindsym $mod+Ctrl+less move workspace to output left
 
-# start chrome in ws 2
-exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/google-chrome-stable'
+# start browser in ws 2
+exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/firefox'
 
 #screenshot
 bindsym Print exec maim -s | xclip -selection clipboard -t image/png
