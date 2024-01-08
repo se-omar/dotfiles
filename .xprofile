@@ -1,2 +1,3 @@
 xrandr --output DP-3 --same-as eDP-1
+xrandr -s 1920x1080
 xmodmap ~/layouts/qwerty.xmodmap
