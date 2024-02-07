@@ -243,6 +243,8 @@ bindsym Ctrl+shift+k exec xmodmap ~/dotfiles/layouts/dvorak.xmodmap
 # set english, arabic toggle with alt shift
 exec --no-startup-id setxkbmap -layout us,ara grp:alt_shift_toggle  
 
+# switch left and right mouse buttons
+exec --no-startup-id xinput set-button-map 23 3 2 1 4 5 6 7
 
 #control volume
 # bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5% #increase sound volume
