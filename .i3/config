@@ -244,7 +244,7 @@ bindsym Ctrl+shift+k exec xmodmap ~/dotfiles/layouts/dvorak.xmodmap
 exec --no-startup-id setxkbmap -layout us,ara grp:alt_shift_toggle  
 
 # set mouse sensitivity
-exec --no-startup-id xinput --set-prop "SIGMACHIP Usb Mouse" "libinput Accel Speed" -0.6
+exec --no-startup-id xinput --set-prop "SIGMACHIP Usb Mouse" "libinput Accel Speed" -0.7
 
 #control volume
 # bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5% #increase sound volume
