@@ -105,6 +105,8 @@ export EDITOR='nvim'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vi="nvim"
 bindkey '^H' backward-kill-word
+bindkey -s ^f "tmux-sessionizer\n"
+PATH="$PATH":"$HOME/.local/scripts/"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
