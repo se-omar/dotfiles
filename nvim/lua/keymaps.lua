@@ -74,14 +74,14 @@ keymap("v", ">", ">gv", opts)
 
 -- Plugins --
 
--- NvimTree
-keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
+-- oil keymap
+vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
 -- Telescope
-keymap("n", "<leader>te", ":Telescope find_files hidden=true<CR>", opts)
-keymap("n", "<leader>tt", ":Telescope live_grep<CR>", opts)
-keymap("n", "<leader>tp", ":Telescope projects<CR>", opts)
-keymap("n", "<leader>tb", ":Telescope buffers<CR>", opts)
+keymap("n", "<leader>et", ":Telescope find_files hidden=true<CR>", opts)
+keymap("n", "<leader>eg", ":Telescope live_grep<CR>", opts)
+keymap("n", "<leader>ep", ":Telescope projects<CR>", opts)
+keymap("n", "<leader>ec", ":Telescope buffers<CR>", opts)
 
 -- Git
 keymap("n", "<leader>gg", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", opts)
