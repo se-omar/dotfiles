@@ -9,10 +9,6 @@ function M.config()
     return
   end
 
-  local hide_in_width = function()
-    return vim.fn.winwidth(0) > 80
-  end
-
   local diagnostics = {
     "diagnostics",
     sources = { "nvim_diagnostic" },
@@ -20,11 +16,6 @@ function M.config()
     symbols = { error = " ", warn = " " },
     colored = false,
     always_visible = true,
-  }
-
-  local filetype = {
-    "filetype",
-    icons_enabled = false,
   }
 
   local location = {
