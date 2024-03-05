@@ -73,10 +73,13 @@ ZSH_THEME="robbyrussell"
 plugins=(
     git
     zsh-autosuggestions
+	zsh-vi-mode
   )
 
 source $ZSH/oh-my-zsh.sh
-
+ZVM_VI_INSERT_ESCAPE_BINDKEY=jk
+zvm_bindkey vicmd H vi-first-non-blank 
+zvm_bindkey vicmd L vi-end-of-line
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
