@@ -102,6 +102,9 @@ export EDITOR='nvim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vi="nvim"
+alias shutdown="sudo shutdown -h now"
+alias restart="sudo shutdown -r now"
+alias sleep="sudo shutdown -s now"
 bindkey '^H' backward-kill-word
 bindkey -s ^f "tmux-sessionizer\n"
 PATH="$PATH":"$HOME/.local/scripts/"
