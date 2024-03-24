@@ -44,6 +44,9 @@ keymap("n", "<ESC>", "<cmd>nohlsearch<CR>", opts)
 -- Close buffers
 keymap("n", "<leader>bc", ":bdelete<CR>", opts)
 
+-- Vertical split
+keymap("n", "<leader>vs", ":vsplit<CR>", opts)
+
 -- Better paste
 keymap("v", "p", '"_dP', opts)
 
