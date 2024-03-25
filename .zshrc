@@ -105,6 +105,9 @@ alias vi="nvim"
 alias shutdown="sudo shutdown -h now"
 alias restart="sudo shutdown -r now"
 alias sleep="sudo shutdown -s now"
+alias standardconf="ln -sf ~/dotfiles/.aerospace-standard.toml ~/.aerospace.toml; aerospace reload-config"
+alias splitconf="ln -sf ~/dotfiles/.aerospace-split.toml ~/.aerospace.toml; aerospace reload-config"
+alias sleep="sudo shutdown -s now"
 bindkey '^H' backward-kill-word
 bindkey -s ^f "tmux-sessionizer\n"
 PATH="$PATH":"$HOME/.local/scripts/"
@@ -129,3 +132,5 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:/opt/gradle/gradle-7.4.2/bin
 export JAVA_HOME=/usr/lib/jvm/default
+export JAVA_HOME=$(/usr/libexec/java_home)
+export DB_PORT=5431
