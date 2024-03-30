@@ -35,6 +35,12 @@ vim.api.nvim_create_autocmd({ "BufWritePost" }, {
   end,
 })
 
+vim.api.nvim_create_autocmd({ "TextChanged", "BufWinEnter", "InsertLeave" }, {
+  callback = function()
+	require("lint").try_lint()
+  end,
+})
+
 vim.api.nvim_create_autocmd({ "VimEnter" }, {
   callback = function()
     vim.cmd "hi link illuminatedWord LspReferenceText"
