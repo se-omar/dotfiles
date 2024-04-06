@@ -34,8 +34,8 @@ function M.config()
       always_divide_middle = true,
     },
     sections = {
-      lualine_a = { "branch" },
-      lualine_b = { "" },
+      lualine_a = { "" },
+      lualine_b = { "branch" },
       lualine_c = { "buffers" },
       lualine_x = { diagnostics },
       lualine_y = { location },

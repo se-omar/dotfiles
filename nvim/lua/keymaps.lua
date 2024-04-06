@@ -85,6 +85,7 @@ keymap("n", "<leader>ot", ":Telescope find_files hidden=true<CR>", opts)
 keymap("n", "<leader>og", ":Telescope live_grep<CR>", opts)
 keymap("n", "<leader>op", ":Telescope projects<CR>", opts)
 keymap("n", "<leader>oc", ":Telescope buffers<CR>", opts)
+keymap("n", "<leader>or", ":Telescope oldfiles <CR>", opts)
 
 -- Git
 keymap("n", "<leader>gg", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", opts)

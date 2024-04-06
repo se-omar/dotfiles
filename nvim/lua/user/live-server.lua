@@ -1,6 +1,7 @@
 local M = {
 	"barrett-ruth/live-server.nvim",
-	event = "VeryLazy"
+	event = "VeryLazy",
+	enabled = false
 }
 
 function M.config()
