@@ -2,7 +2,7 @@ local M = {
   "akinsho/git-conflict.nvim",
   version = "*",
   config = true,
-  event = "VeryLazy",
+  event = "BufReadPre",
 }
 
 function M.config()

@@ -105,7 +105,7 @@ keymap("x", "<leader>c", "<esc><cmd>lua require('Comment.api').toggle.linewise(v
 -- keymap("n", "<leader>dt", "<cmd>lua require'dap'.terminate()<cr>", opts)
 
 -- Lsp
-keymap("n", "<leader>f", "<cmd>lua require'conform'.format({lsp_fallback=true})<cr>", opts)
+keymap("n", "<leader>f", "<cmd>lua require'conform'.format({lsp_fallback=true, async=true})<cr>", opts)
 
 -- start and end of line
 keymap("n", "<S-l>", "$", opts)
