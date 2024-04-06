@@ -42,7 +42,6 @@ vim.opt.formatoptions:remove({ "c", "r", "o" }) -- This is a sequence of letters
 vim.opt.linebreak = true
 
 vim.opt.relativenumber = true
-vim.opt.guifont = { "JetBrainsMono Nerd Font Mono", ":h9" }
 vim.opt.incsearch = true
 
 vim.opt.foldcolumn = '0' -- '0' is not bad
@@ -50,3 +49,5 @@ vim.opt.foldlevel = 99 -- Using ufo provider need a large value, feel free to de
 vim.opt.foldlevelstart = 99
 vim.opt.foldenable = true
 vim.g.skip_ts_context_commentstring_module = true
+
+vim.loader.enable()

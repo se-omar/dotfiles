@@ -29,7 +29,6 @@ local M = {
   },
   event = {
     "InsertEnter",
-    "CmdlineEnter",
   },
 }
 

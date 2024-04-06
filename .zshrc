@@ -102,6 +102,7 @@ export EDITOR='nvim'
 alias zshconf="nvim ~/dotfiles/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vi="nvim"
+alias viconf="nvim ~/.config/nvim/init.lua"
 alias shutdown="sudo shutdown -h now"
 alias restart="sudo shutdown -r now"
 alias sleep="sudo shutdown -s now"

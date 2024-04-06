@@ -6,7 +6,6 @@ local M = {
       "hrsh7th/nvim-cmp",
       event = {
         "InsertEnter",
-        "CmdlineEnter",
       },
     },
   },
@@ -20,17 +19,6 @@ function M.config()
       lua = { "string", "source" },
       javascript = { "string", "template_string" },
       java = false,
-    },
-    fast_wrap = {
-      map = "<M-e>",
-      chars = { "{", "[", "(", '"', "'" },
-      pattern = string.gsub([[ [%'%"%)%>%]%)%}%,] ]], "%s+", ""),
-      offset = 0, -- Offset from pattern match
-      end_key = "L",
-      keys = "qwertyuiopzxcvbnmasdfghjkl",
-      check_comma = true,
-      highlight = "PmenuSel",
-      highlight_grey = "LineNr",
     },
   }
 
