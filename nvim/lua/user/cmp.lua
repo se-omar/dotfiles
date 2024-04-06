@@ -37,11 +37,6 @@ function M.config()
   local luasnip = require "luasnip"
   require("luasnip/loaders/from_vscode").lazy_load()
 
-  local check_backspace = function()
-    local col = vim.fn.col "." - 1
-    return col == 0 or vim.fn.getline("."):sub(col, col):match "%s"
-  end
-
   local kind_icons = {
     Text = "󰉿",
     Method = "󰆧",
@@ -82,9 +77,7 @@ function M.config()
         i = cmp.mapping.abort(),
         c = cmp.mapping.close(),
       },
-      -- Accept currently selected item. If none selected, `select` first item.
-      -- Set `select` to `false` to only confirm explicitly selected items.
-      ["<CR>"] = cmp.mapping.confirm { select = true },
+	  ["<C-y>"] = cmp.mapping.confirm {select=true}
     },
     formatting = {
       fields = { "kind", "abbr", "menu" },
