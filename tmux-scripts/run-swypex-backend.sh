@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Create a new window
-tmux new-window -t backend:2
+tmux new-window -t backend:2 -c '~/work/source/backend'
 
 # Split the window into two panes vertically
 tmux split-window -v
