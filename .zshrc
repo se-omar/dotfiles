@@ -99,19 +99,24 @@ export EDITOR='nvim'
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconf="nvim ~/dotfiles/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+
 alias vi="nvim"
+
 alias viconf="nvim ~/.config/nvim/init.lua"
+alias zshconf="nvim ~/dotfiles/.zshrc"
+
 alias shutdown="sudo shutdown -h now"
 alias restart="sudo shutdown -r now"
 alias sleep="sudo shutdown -s now"
+
 alias standardconf="ln -sf ~/dotfiles/.aerospace-standard.toml ~/.aerospace.toml; aerospace reload-config"
 alias splitconf="ln -sf ~/dotfiles/.aerospace-split.toml ~/.aerospace.toml; aerospace reload-config"
+
 alias runback="~/dotfiles/tmux-scripts/run-swypex-backend.sh"
-alias cdback="tmux new -s backend -c ~/work/source/backend"
-alias cdfront="tmux new -s frontend -c ~/work/source/next_dashboard"
-alias sleep="sudo shutdown -s now"
+alias tmuxback="tmux new -s backend -c ~/work/source/backend"
+alias runfront="~/dotfiles/tmux-scripts/run-swypex-frontend.sh"
+alias tmuxfront="tmux new -s frontend -c ~/work/source/next_dashboard"
+
 bindkey '^H' backward-kill-word
 bindkey -s ^f "tmux-sessionizer\n"
 PATH="$PATH":"$HOME/.local/scripts/"
