@@ -134,6 +134,9 @@ keymap("n", "<leader>he", "<cmd>lua require('harpoon.ui').toggle_quick_menu()<cr
 keymap("n", "<leader>hj", "<cmd>lua require('harpoon.ui').nav_next()<cr>", opts)
 keymap("n", "<leader>hk", "<cmd>lua require('harpoon.ui').nav_prev()<cr>", opts)
 
+-- go to previous file
+keymap("n", "<leader>hp", "<C-^>", opts)
+
 keymap("n", "<leader>hh", "<cmd>lua require('harpoon.ui').nav_file(1)<cr>", opts)
 keymap("n", "<leader>ht", "<cmd>lua require('harpoon.ui').nav_file(2)<cr>", opts)
 keymap("n", "<leader>hn", "<cmd>lua require('harpoon.ui').nav_file(3)<cr>", opts)
