@@ -6,6 +6,7 @@
 # Split the window into two panes vertically
 tmux split-window -v
 tmux select-layout even-horizontal
+tmux resize-pane -R 30
 
 # Run different commands in each pane
 tmux send-keys -t frontend:1.0 'vi .' Enter

@@ -101,6 +101,7 @@ export EDITOR='nvim'
 # Example aliases
 
 alias vi="nvim"
+alias c="clear"
 
 alias viconf="nvim ~/.config/nvim/init.lua"
 alias zshconf="nvim ~/dotfiles/.zshrc"
@@ -117,7 +118,7 @@ alias tmuxback="tmux new -s backend -c ~/work/source/backend"
 alias runfront="~/dotfiles/tmux-scripts/run-swypex-frontend.sh"
 alias tmuxfront="tmux new -s frontend -c ~/work/source/next_dashboard"
 
-bindkey '^H' backward-kill-word
+# bindkey '^H' backward-kill-word
 bindkey -s ^f "tmux-sessionizer\n"
 PATH="$PATH":"$HOME/.local/scripts/"
 
