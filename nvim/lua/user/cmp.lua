@@ -35,6 +35,8 @@ local M = {
 function M.config()
   local cmp = require "cmp"
   local luasnip = require "luasnip"
+  luasnip.filetype_extend("typescript", { "javascript" })
+  luasnip.filetype_extend("typescriptreact", { "javascript" })
   require("luasnip/loaders/from_vscode").lazy_load()
 
   local kind_icons = {
