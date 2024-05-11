@@ -62,6 +62,14 @@ function M.config()
 
 		lspconfig[server].setup(Opts)
 	end
+
+	lspconfig.kotlin_language_server.setup {
+		filetypes = { "kotlin", "java" },
+	}
+
+	lspconfig.dartls.setup {
+		cmd = { "dart", 'language-server', '--protocol=lsp' },
+	}
 end
 
 return M

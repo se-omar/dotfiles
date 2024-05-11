@@ -15,6 +15,7 @@ M.servers = {
 	-- "csharp_ls",
 	"gopls",
 	"jdtls",
+	"kotlin_language_server",
 }
 
 return M

@@ -42,7 +42,7 @@ keymap("n", "<C-h>", ":bprevious<CR>", opts)
 keymap("n", "<ESC>", "<cmd>nohlsearch<CR>", opts)
 
 -- Close buffers
-keymap("n", "<leader>bc", ":bdelete<CR>", opts)
+keymap("n", "<C-c>", ":bp|bd #<CR>", opts)
 
 -- Vertical split
 keymap("n", "<leader>vs", ":vsplit<CR>", opts)
