@@ -110,8 +110,8 @@ alias shutdown="sudo shutdown -h now"
 alias restart="sudo shutdown -r now"
 alias sleep="sudo shutdown -s now"
 
-alias standardconf="ln -sf ~/dotfiles/.aerospace-standard.toml ~/.aerospace.toml; aerospace reload-config"
-alias splitconf="ln -sf ~/dotfiles/.aerospace-split.toml ~/.aerospace.toml; aerospace reload-config"
+alias standardconf="ln -sf ~/dotfiles/.skhdrc-standard ~/.skhdrc; skhd --reload"
+alias splitconf="ln -sf ~/dotfiles/.skhdrc-split ~/.skhdrc; skhd --reload"
 
 alias runback="~/dotfiles/tmux-scripts/run-swypex-backend.sh"
 alias tmuxback="tmux new -s backend -c ~/work/source/backend"
