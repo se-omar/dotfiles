@@ -5,7 +5,7 @@ local M = {
 
 function M.config()
 	require('leap').add_default_mappings()
-
+	vim.api.nvim_set_hl(0, 'LeapLabelPrimary', {   fg='Black', bg='Cyan' })
 	-- Hide the (real) cursor when leaping, and restore it afterwards.
 	vim.api.nvim_create_autocmd('User', {
 		pattern = 'LeapEnter',
