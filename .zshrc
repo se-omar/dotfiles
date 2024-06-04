@@ -144,3 +144,4 @@ export PATH=$PATH:/opt/gradle/gradle-7.4.2/bin
 export JAVA_HOME=/usr/lib/jvm/default
 export JAVA_HOME=$(/usr/libexec/java_home)
 export DB_PORT=5431
+export PATH="/usr/local/opt/postgresql@15/bin:$PATH"
