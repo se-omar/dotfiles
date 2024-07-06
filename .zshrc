@@ -102,6 +102,7 @@ export EDITOR='nvim'
 
 alias vi="nvim"
 alias c="clear"
+alias ex="exit"
 
 alias viconf="nvim ~/.config/nvim/init.lua"
 alias zshconf="nvim ~/dotfiles/.zshrc"
@@ -117,6 +118,8 @@ alias runback="~/dotfiles/tmux-scripts/run-swypex-backend.sh"
 alias tmuxback="tmux new -s backend -c ~/work/source/backend"
 alias runfront="~/dotfiles/tmux-scripts/run-swypex-frontend.sh"
 alias tmuxfront="tmux new -s frontend -c ~/work/source/next_dashboard"
+
+alias sfile='nvim $(fzf -m --preview="bat --color=always {}")'
 
 # bindkey '^H' backward-kill-word
 bindkey -s ^f "tmux-sessionizer\n"
@@ -143,5 +146,6 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:/opt/gradle/gradle-7.4.2/bin
 export JAVA_HOME=/usr/lib/jvm/default
 export JAVA_HOME=$(/usr/libexec/java_home)
-export DB_PORT=5431
 export PATH="/usr/local/opt/postgresql@15/bin:$PATH"
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
