@@ -119,7 +119,7 @@ alias tmuxback="tmux new -s backend -c ~/work/source/backend"
 alias runfront="~/dotfiles/tmux-scripts/run-swypex-frontend.sh"
 alias tmuxfront="tmux new -s frontend -c ~/work/source/next_dashboard"
 
-alias sfile='nvim $(fzf -m --preview="bat --color=always {}")'
+alias of='nvim $(fzf -m --preview="bat --color=always {}")'
 
 # bindkey '^H' backward-kill-word
 bindkey -s ^f "tmux-sessionizer\n"
@@ -146,6 +146,12 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:/opt/gradle/gradle-7.4.2/bin
 export JAVA_HOME=/usr/lib/jvm/default
 export JAVA_HOME=$(/usr/libexec/java_home)
+export BAT_THEME="TwoDark"
 export PATH="/usr/local/opt/postgresql@15/bin:$PATH"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
