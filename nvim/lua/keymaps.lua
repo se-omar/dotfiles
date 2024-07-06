@@ -62,14 +62,6 @@ keymap("i", "jk", "<ESC>", opts)
 -- keymap("x", "s", "l", opts)
 -- keymap("x", "l", "s", opts)
 
--- map e to w for easier navigation on dvorak
-keymap("n", "e", "w", opts)
-keymap("n", "w", "e", opts)
-keymap("v", "e", "w", opts)
-keymap("v", "w", "e", opts)
-keymap("x", "e", "w", opts)
-keymap("x", "e", "e", opts)
-
 -- Visual --
 -- Stay in indent mode
 keymap("v", "<", "<gv", opts)
