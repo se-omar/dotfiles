@@ -35,7 +35,7 @@ function M.config()
 
 	local lspconfig = require "lspconfig"
 	local on_attach = function(client, bufnr)
-		if client.name == "tsserver" then
+		if client.name == "ts_ls" then
 			client.server_capabilities.documentFormattingProvider = false
 		end
 
