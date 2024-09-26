@@ -63,13 +63,25 @@ function M.config()
 		lspconfig[server].setup(Opts)
 	end
 
-	lspconfig.kotlin_language_server.setup {
-		filetypes = { "kotlin", "java" },
-	}
-
-	lspconfig.dartls.setup {
-		cmd = { "dart", 'language-server', '--protocol=lsp' },
-	}
+	require("lspconfig").dartls.setup({
+		cmd = { "dart", "language-server", "--protocol=lsp" },
+		filetypes = { "dart" },
+		init_options = {
+			closingLabels = true,
+			flutterOutline = true,
+			onlyAnalyzeProjectsWithOpenFiles = true,
+			outline = true,
+			suggestFromUnimportedLibraries = true,
+		},
+		on_attach = on_attach,
+		-- root_dir = root_pattern("pubspec.yaml"),
+		settings = {
+			dart = {
+				completeFunctionCalls = true,
+				showTodos = true,
+			},
+		},
+	})
 end
 
 return M
