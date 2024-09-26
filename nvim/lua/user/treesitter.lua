@@ -12,7 +12,7 @@ function M.config()
 	local configs = require "nvim-treesitter.configs"
 
 	configs.setup {
-		ensure_installed = { "lua", "markdown", "markdown_inline", "bash", "python", "tsx", "html", "javascript", "java", "kotlin" }, -- put the language you want in this array
+		ensure_installed = { "lua", "markdown", "markdown_inline", "bash", "python", "tsx", "html", "javascript" }, -- put the language you want in this array
 		auto_install = true,
 		-- ensure_installed = "all", -- one of "all" or a list of languages
 		ignore_install = { "" }, -- List of parsers to ignore installing
