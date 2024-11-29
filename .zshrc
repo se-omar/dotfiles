@@ -119,6 +119,9 @@ alias runback="~/dotfiles/tmux-scripts/run-swypex-backend.sh"
 alias tmuxback="tmux new -s backend -c ~/work/source/backend"
 alias runfront="~/dotfiles/tmux-scripts/run-swypex-frontend.sh"
 alias tmuxfront="tmux new -s frontend -c ~/work/source/next_dashboard"
+alias tmuxmobile="tmux new -s mobile -c ~/work/source/solid_mobile"
+alias runmobile="~/dotfiles/tmux-scripts/run-swypex-mobile.sh"
+alias lg="lazygit"
 
 alias of='nvim $(fzf -m --preview="bat --color=always {}")'
 
