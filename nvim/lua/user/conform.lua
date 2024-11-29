@@ -10,17 +10,15 @@ function M.config()
 			go = { "gofmt" },
 			-- Conform will run multiple formatters sequentially
 			python = { "isort", "black" },
-			-- Use a sub-list to run only the first available formatter
-			javascript = { { "eslint_d", "eslint_d" } },
-			typescript = { { "eslint_d", "eslint_d" } },
-			typescriptreact = { { "eslintd", "eslint_d" } },
-			javascriptreact = { { "eslintd", "eslint_d" } },
-			json = { { "eslint_d", "eslint_d" } },
-			html = { { "eslint_d", "eslint_d" } },
-			css = { { "eslint_d", "eslint_d" } },
+			javascript = { "eslint", "prettierd", stop_after_first = true },
+			typescript = { "eslint", "prettierd", stop_after_first = true },
+			typescriptreact = { "eslint_d", "prettierd", stop_after_first = true },
+			javascriptreact = { "eslint_d", "prettierd", stop_after_first = true },
+			json = { "eslint", "prettierd", stop_after_first = true },
+			html = { "eslint", "prettierd", stop_after_first = true },
+			css = { "eslint", "prettierd", stop_after_first = true },
 		},
 	})
 end
 
 return M
-
