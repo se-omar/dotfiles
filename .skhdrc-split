@@ -1,5 +1,5 @@
 # opens iTerm2
-alt - return : osascript -e 'tell application "iTerm2" to create window with default profile command ""' || open -na iTerm 
+alt - return : osascript -e 'tell application "kitty" to create window with default profile command ""' || open -na kitty 
 #
 # # Show system statistics
 # fn + lalt - 1 : "${HOME}"/.config/yabai/scripts/show_cpu.sh
