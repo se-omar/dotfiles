@@ -5,7 +5,7 @@ local M = {
 
 function M.config()
 	require('leap').add_default_mappings()
-	vim.api.nvim_set_hl(0, 'LeapLabelPrimary', {   fg='Black', bg='Cyan' })
+	vim.api.nvim_set_hl(0, 'LeapBackdrop', { link = 'Comment' })
 	vim.api.nvim_create_autocmd('User', {
 		pattern = 'LeapLeave',
 		callback = function()
