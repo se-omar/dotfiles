@@ -49,5 +49,6 @@ vim.opt.foldlevel = 99 -- Using ufo provider need a large value, feel free to de
 vim.opt.foldlevelstart = 99
 vim.opt.foldenable = true
 vim.g.skip_ts_context_commentstring_module = true
+vim.g.lazygit_floating_window_scaling_factor = 1 -- scaling factor for floating window
 
 vim.loader.enable()
