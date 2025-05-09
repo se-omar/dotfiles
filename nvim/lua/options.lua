@@ -52,3 +52,5 @@ vim.g.skip_ts_context_commentstring_module = true
 vim.g.lazygit_floating_window_scaling_factor = 1 -- scaling factor for floating window
 
 vim.loader.enable()
+
+vim.diagnostic.config({ virtual_text = true })
