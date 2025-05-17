@@ -14,6 +14,5 @@ local rtp = vim.opt.rtp
 rtp:prepend(lazypath)
 
 require('lazy').setup {
-  { import = 'plugins', checker = { enabled = false }, change_detection = { enabled = false }
- },
+  { import = 'plugins', checker = { enabled = false }, change_detection = { enabled = false } },
 }
