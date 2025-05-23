@@ -4,6 +4,10 @@ vim.g.maplocalleader = ' '
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = true
 
+vim.opt.completeopt = { 'menuone', 'noselect' }
+vim.opt.pumheight = 10
+vim.opt.smartindent = true
+
 -- [[ Setting options ]]
 -- See `:help vim.o`
 -- NOTE: You can change these options as you wish!
@@ -48,6 +52,12 @@ vim.o.timeoutlen = 300
 -- Configure how new splits should be opened
 vim.o.splitright = true
 vim.o.splitbelow = true
+vim.opt.expandtab = false
+vim.opt.laststatus = 3
+vim.opt.whichwrap:append("<,>,[,],h,l") 
+vim.opt.iskeyword:append("-") 
+vim.opt.formatoptions:remove({ "c", "r", "o" })
+vim.opt.linebreak = true
 
 -- Sets how neovim will display certain whitespace characters in the editor.
 --  See `:help 'list'`
