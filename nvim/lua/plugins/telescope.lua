@@ -10,6 +10,7 @@ return {
       -- This is only run then, not every time Neovim starts up.
       build = 'make',
 
+
       -- `cond` is a condition used to determine whether this plugin should be
       -- installed and loaded.
       cond = function()
