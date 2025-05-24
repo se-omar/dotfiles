@@ -40,4 +40,4 @@ vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' }
 -- commenting
 vim.keymap.set({'v', 'n'}, "<leader>c", ":norm gcc<CR>")
 
-vim.keymap.set('n', "<leader>ef", ":silent !eslint_d % --fix<CR>")
+vim.keymap.set('n', "<leader>ef", ":EslintFixAll<CR>")
