@@ -159,11 +159,3 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
-
-# bun completions
-[ -s "/Users/swypex/.bun/_bun" ] && source "/Users/swypex/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-. "/Users/swypex/.deno/env"
