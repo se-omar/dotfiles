@@ -101,6 +101,7 @@ export EDITOR='nvim'
 #
 # Example aliases
 
+
 alias vi="nvim"
 alias c="clear"
 alias ex="exit"
@@ -112,8 +113,16 @@ alias shutdown="sudo shutdown -h now"
 alias restart="sudo shutdown -r now"
 alias sleep="sudo shutdown -s now"
 
-alias standardconf="ln -sf ~/dotfiles/.skhdrc-standard ~/.skhdrc; skhd --reload"
-alias splitconf="ln -sf ~/dotfiles/.skhdrc-split ~/.skhdrc; skhd --reload"
+OS_TYPE="$(uname)"
+if [[ "$OS_TYPE" == "Darwin" ]]; then
+	alias standardconf="ln -sf ~/dotfiles/.skhdrc-standard ~/.skhdrc; skhd --reload"
+	alias splitconf="ln -sf ~/dotfiles/.skhdrc-split ~/.skhdrc; skhd --reload"
+elif [[ "$OS_TYPE" == "Linux" ]]; then
+	alias standardconf="ln -sf ~/dotfiles/.i3/standard-config ~/.i3/config; i3-msg reload"
+	alias splitconf="ln -sf ~/dotfiles/.i3/split-config ~/.i3/config; i3-msg reload"
+else
+    echo "Unsupported OS: $OS_TYPE"
+fi
 
 alias runback="~/dotfiles/tmux-scripts/run-swypex-backend.sh"
 alias tmuxback="tmux new -s backend -c ~/work/source/backend"
