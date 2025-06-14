@@ -134,22 +134,12 @@ alias lg="lazygit"
 
 alias of='nvim $(fzf -m --preview="bat --color=always {}")'
 
-# bindkey '^H' backward-kill-word
 bindkey -s ^f "tmux-sessionizer\n"
 PATH="$PATH":"$HOME/.local/scripts/"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-export FLYCTL_INSTALL="/home/omar/.fly"
-export PATH="$FLYCTL_INSTALL/bin:$PATH"
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/omar/gazal/google-cloud-sdk/path.zsh.inc' ]; then . '/home/omar/gazal/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/home/omar/gazal/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/omar/gazal/google-cloud-sdk/completion.zsh.inc'; fi
 
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin:/usr/share/dotnet:$HOME/.dotnet/tools
