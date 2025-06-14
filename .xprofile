@@ -1,3 +1,2 @@
-xrandr --output DP-3 --same-as eDP-1
-xrandr -s 1920x1080
+xrandr --output DP-3 --primary --mode 2560x1440 --output eDP-1 --same-as DP-3 --scale 1.333x1.333
 xmodmap ~/layouts/qwerty.xmodmap
