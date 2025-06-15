@@ -197,6 +197,9 @@ exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/vivaldi'
 #screenshot
 bindsym Print exec maim -s | xclip -selection clipboard -t image/png
 
+# partial screenshot
+bindsym $mod+shift+s exec flameshot gui -c
+
 # toggle keyboard layouts
 bindsym Ctrl+shift+t exec xmodmap ~/dotfiles/layouts/qwerty.xmodmap
 bindsym Ctrl+shift+k exec xmodmap ~/dotfiles/layouts/dvorak.xmodmap
