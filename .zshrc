@@ -151,6 +151,7 @@ export JAVA_HOME=/usr/lib/jvm/default
 export JAVA_HOME=$(/usr/libexec/java_home)
 export BAT_THEME="TwoDark"
 export PATH="/usr/local/opt/postgresql@15/bin:$PATH"
+export PATH="/opt/idea-IU-251.26094.121/bin:$PATH"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
